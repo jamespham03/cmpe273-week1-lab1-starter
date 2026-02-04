@@ -64,7 +64,7 @@ jamespham@Jamess-MacBook-Pro cmpe273-week1-lab1-starter % curl "http://127.0.0.1
 
 ### 1. What makes this distributed?
 
-This system is distributed because the two services are running independently (on two separate processes and ports). In addition, they communicate with each other over the network using HTTP. Since each service runs on separate processes, they occupy their own memory space. They can be started, stopped, and destarted without affecting the other's runtime. They communicate solely through netowkr interfaces using APIs and cannot access each other's memory or state. All these facts make them distributed. If they were part of a monolithic software, stopping service A would immediately crash service B, but this wasn't the case. Instead, service B handles service A's unavailability without any trouble.
+This system is distributed because the two services are running independently (on two separate processes and ports). In addition, they communicate with each other over the network using HTTP. Since each service runs on separate processes, they occupy their own memory space. They can be started, stopped, and restarted without affecting the other's runtime. They communicate solely through network interfaces using APIs and cannot access each other's memory or state. All these facts make them distributed. If they were part of a monolithic software, stopping service A would immediately crash service B, but this wasn't the case. Instead, service B handles service A's unavailability without any trouble.
 
 ### 2. What happens on timeout?
 
